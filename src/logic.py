@@ -27,6 +27,6 @@ pyotherside.send('currentSlotSuffix', output)
 
 def switchSlotFunc():
     if temp.__eq__(0):
-        os.system(prefix + 'set-active-boot-slot ' + '1 && sudo reboot') # will only reboot if no password is set on device
+        os.system(prefix + 'set-active-boot-slot ' + 'b && sudo reboot -f') # will only reboot if no password is set on device
     elif temp.__eq__(1):
-        os.system(prefix + 'set-active-boot-slot ' + '0 && sudo reboot')
+        os.system(prefix + 'set-active-boot-slot ' + 'a && sudo reboot -f')
